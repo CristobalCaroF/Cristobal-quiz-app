@@ -83,6 +83,7 @@ main {
   /* position: relative; */
   /* margin-top: var(--header-height); */
   padding: 20px 0 20px 0;
+  margin-bottom: var(--nav-height);
   /* background: #f1fada; */
   background-image: url("./images/marvel-wallpaper.jpeg");
 }
@@ -99,6 +100,7 @@ main {
 }
 
 .question-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -139,12 +141,12 @@ hiding-something-with-pure-css-with-show-and-hide-button */
 
 .card__bookmark {
   position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 12px;
-  max-height: 12px;
-  padding: 6px 12px;
-  z-index: 2;
+  top: -12px;
+  right: -12px;
+  background-color: none;
+  /* width: 36px;
+  height: auto; */
+  /* padding: 6px 12px; */
 }
 
 li {
@@ -171,4 +173,24 @@ button {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
+}
+
+footer {
+  position: fixed;
+  z-index: 1;
+  /* margin: 0 auto; */
+  background: #265073;
+  border-top-left-radius: var(--general-gap);
+  border-top-right-radius: var(--general-gap);
+  width: 100%;
+  height: var(--nav-height);
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+nav {
+  /* padding: 2px 3px; */
+  margin-top: var(--nav-height);
 }
