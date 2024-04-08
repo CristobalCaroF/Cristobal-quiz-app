@@ -44,15 +44,6 @@
 }
 
 .main-header {
-  /* width: auto;
-  text-align: center;
-  position: fixed; */
-  /* display: flex;
-  justify-content: center; */
-  /* border-radius: 12px;
-  top: 0;
-  background-color: #265073; */
-
   position: fixed;
   top: 0;
   z-index: 1;
@@ -65,6 +56,7 @@
   top: 0;
   display: flex;
   justify-content: center;
+  z-index: 1;
   /* box-shadow: 0px 0px 20px 30px #f2eddf; */
 }
 
@@ -77,6 +69,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: var(--header-title);
   line-height: var(--header-height);
+  z-index: 1;
 }
 
 /* .header-subtitle {
@@ -119,11 +112,49 @@ main {
   box-shadow: 0px 0px 10px #265073;
 }
 
+.answer {
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+/* Code from: https://stackoverflow.com/questions/40312901/showing-and-
+hiding-something-with-pure-css-with-show-and-hide-button */
+
+#cont {
+  display: none;
+}
+#show:target #cont {
+  display: inline-block;
+}
+#show:target #show {
+  display: none;
+}
+
 .question {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 12px;
+  max-height: 12px;
+  padding: 6px 12px;
+  z-index: 2;
+}
+
+li {
+  background-color: #265073;
+  color: #cccccc;
+  font-size: 16px;
+}
+
+button {
+  margin: auto;
 }
 
 .card-answer {
