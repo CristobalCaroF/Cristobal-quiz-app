@@ -117,13 +117,6 @@ hiding-something-with-pure-css-with-show-and-hide-button */
   align-items: flex-start;
 }
 
-.card__bookmark {
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  background-color: none;
-}
-
 li {
   background-color: #265073;
   color: #cccccc;
@@ -132,6 +125,13 @@ li {
 
 button {
   margin: auto;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: none;
 }
 
 .card-answer {
@@ -150,13 +150,13 @@ button {
   align-items: flex-end;
 }
 
-footer {
+.navbar {
   position: fixed;
   z-index: 1;
   background: #265073;
   border-top-left-radius: var(--general-gap);
   border-top-right-radius: var(--general-gap);
-  width: 100%;
+  width: 96%;
   height: var(--nav-height);
   bottom: 0;
   display: flex;
@@ -164,6 +164,8 @@ footer {
   align-items: flex-end;
 }
 
-nav {
+.navbar img {
   margin-top: var(--nav-height);
+  width: 45px;
+  align-items: center;
 }
