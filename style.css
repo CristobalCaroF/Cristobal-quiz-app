@@ -169,3 +169,9 @@ button {
   width: 45px;
   align-items: center;
 }
+
+.navbar-link:hover {
+  background-color: #ff0202;
+  margin-top: auto;
+  width: auto;
+}
