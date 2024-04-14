@@ -1,0 +1,25 @@
+.navbar {
+  position: fixed;
+  z-index: 1;
+  background: #265073;
+  border-top-left-radius: var(--general-gap);
+  border-top-right-radius: var(--general-gap);
+  width: 96%;
+  height: var(--nav-height);
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.navbar img {
+  margin-top: var(--nav-height);
+  width: 45px;
+  align-items: center;
+}
+
+.navbar-link:hover {
+  background-color: #ff0202;
+  margin-top: auto;
+  width: auto;
+}

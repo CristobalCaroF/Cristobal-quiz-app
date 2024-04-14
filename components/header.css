@@ -1,0 +1,23 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin: 0 auto;
+  background: #265073;
+  border-bottom-left-radius: var(--general-gap);
+  border-bottom-right-radius: var(--general-gap);
+  width: 100%;
+  height: var(--header-height);
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app-title {
+  padding: var(--general-gap);
+  color: #f8f4ec;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: var(--header-title);
+  line-height: var(--header-height);
+  z-index: 1;
+}
