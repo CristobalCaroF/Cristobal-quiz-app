@@ -1,1 +1,40 @@
 @import url(./global.css);
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 16px;
+  padding: 20px;
+  height: 600px;
+  max-width: 600px;
+  font-size: 1.5rem;
+  background: #fff;
+  box-shadow: 0px 0px 10px #265073;
+  margin-top: var(--main-margin-top);
+  margin-bottom: var(--nav-height);
+}
+
+.profile__image {
+  border-radius: 50%;
+}
+
+.profile__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 100px;
+  font-size: 26px;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
