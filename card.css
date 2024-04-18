@@ -28,11 +28,17 @@ hiding-something-with-pure-css-with-show-and-hide-button */
 #question-card__answer {
   display: none;
 }
+
 #question-card__answer-button:target #question-card__answer {
   display: inline-block;
 }
 #question-card__answer-button:target #question-card__answer-button {
   display: none;
+}
+
+#question-card__answer:first-child {
+  display: flex;
+  justify-self: center;
 }
 
 .question-card__question {
