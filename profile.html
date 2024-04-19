@@ -4,16 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="profile.css" />
   </head>
   <body>
     <header class="main-header">
       <h1 class="app-title">Marvel Quiz!</h1>
     </header>
     <main>
-      <section class="profile-section">
-        <h3>Captain Marvel</h3>
-      </section>
+      <article class="profile">
+        <section class="profile__header">
+          <img
+            class="profile__image"
+            src="./images/black-widow.jpeg"
+            alt="Captain Marvel Pic"
+            width="300px"
+          />
+          <h2>Black Widow</h2>
+        </section>
+        <section class="profile__content">
+          <h3>About me</h3>
+          <p>
+            Natalia Alianovna Romanova (Russian: Наталья Альяновна Романова) was
+            born on December 3, 1984, in the Soviet Union, and was trained as a
+            KGB spy in a secretive academy called the Red Room which involved
+            training as a ballerina as a cover, as well as the eventual
+            sterilization of the students.
+          </p>
+        </section>
+        <section class="profile__buttons">
+          <button class="profile__questions">
+            <img
+              src="./resources/question.png"
+              alt="Question icon"
+              width="32rem"
+              height="32rem"
+            />
+            12
+          </button>
+          <button class="profile__bookmarks">
+            <img
+              src="./resources/bookmark_filled.png"
+              alt="Bookmark icon"
+              width="32rem"
+              height="32rem"
+            />
+            4
+          </button>
+        </section>
+        <section class="profile__settings">
+          <h3>Settings</h3>
+          <h3>Dark mode</h3>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </section>
+        <section class="profile__settings"></section>
+      </article>
     </main>
     <footer class="main-footer">
       <nav class="navbar">

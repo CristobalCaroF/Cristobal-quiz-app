@@ -4,109 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="card.css" />
   </head>
   <body>
     <header class="main-header">
       <h1 class="app-title">Marvel Quiz!</h1>
     </header>
     <main>
-      <section class="card-section">
-        <article class="question-card question-2">
-          <button class="card__bookmark">
-            <img
-              src="./resources/bookmark_filled.png"
-              alt="Bookmark"
-              style="width: 2em; height: 2em"
-            />
-          </button>
-          <p class="question question-2">
-            What is the name of the powerful artifact that Thanos seeks to
-            collect in the MCU?
-          </p>
-          <button id="show">
-            <a href="#show" id="show">Show answer</a>
-            <div id="cont">
-              Infinity Stones
-              <a href="#hide" id="hide">Hide answer</a>
-            </div>
-          </button>
-          <ul class="question-tags">
-            <li>#Objects</li>
-            <li>#Thanos</li>
-          </ul>
-        </article>
-        <article class="question-card question-4">
-          <button class="card__bookmark">
-            <img
-              src="./resources/bookmark_filled.png"
-              alt="Bookmark"
-              style="width: 2em; height: 2em"
-            />
-          </button>
-          <p class="question question-4">
-            Which MCU film features the first appearance of the character Black
-            Panther?
-          </p>
-          <button id="show">
-            <a href="#show" id="show">Show answer</a>
-            <div id="cont">
-              Captain America: Civil War
-              <a href="#hide" id="hide">Hide answer</a>
-            </div>
-          </button>
-          <ul class="question-tags">
-            <li>#Movies</li>
-            <li>#SuperHeroes</li>
-          </ul>
-        </article>
-        <article class="question-card question-5">
-          <button class="card__bookmark">
-            <img
-              src="./resources/bookmark_filled.png"
-              alt="Bookmark"
-              style="width: 2em; height: 2em"
-            />
-          </button>
-          <p class="question question-5">
-            What is the name of Thor's enchanted hammer?
-          </p>
-          <button id="show">
-            <a href="#show" id="show">Show answer</a>
-            <div id="cont">
-              Mjolnir
-              <a href="#hide" id="hide">Hide answer</a>
-            </div>
-          </button>
-          <ul class="question-tags">
-            <li>#Objects</li>
-            <li>#Thor</li>
-          </ul>
-        </article>
-        <article class="question-card question-9">
-          <button class="card__bookmark">
-            <img
-              src="./resources/bookmark_filled.png"
-              alt="Bookmark"
-              style="width: 2em; height: 2em"
-            />
-          </button>
-          <p class="question question-9">
-            What is the name of the fictional African nation ruled by T'Challa,
-            also known as Black Panther?
-          </p>
-          <button id="show">
-            <a href="#show" id="show">Show answer</a>
-            <div id="cont">
-              Wakanda
-              <a href="#hide" id="hide">Hide answer</a>
-            </div>
-          </button>
-          <ul class="question-tags">
-            <li>#BlackPanter</li>
-          </ul>
-        </article>
-      </section>
+      <article class="question-card question-2">
+        <button class="question-card__bookmark">
+          <img
+            src="./resources/bookmark_filled.png"
+            alt="Bookmark"
+            style="width: 2em; height: 2em"
+          />
+        </button>
+        <h4 class="question-card__question question-2">
+          What is the name of the powerful artifact that Thanos seeks to collect
+          in the MCU?
+        </h4>
+        <button id="show">
+          <a href="#show" id="show">Show answer</a>
+          <div id="question-card__answer">
+            Infinity Stones
+            <a href="#hide" id="hide">Hide answer</a>
+          </div>
+        </button>
+        <ul class="question-card__tags">
+          <li>#Objects</li>
+          <li>#Thanos</li>
+        </ul>
+      </article>
+      <article class="question-card question-4">
+        <button class="question-card__bookmark">
+          <img
+            src="./resources/bookmark_filled.png"
+            alt="Bookmark"
+            style="width: 2em; height: 2em"
+          />
+        </button>
+        <h4 class="question-card__question question-4">
+          Which MCU film features the first appearance of the character Black
+          Panther?
+        </h4>
+        <button id="show">
+          <a href="#show" id="show">Show answer</a>
+          <div id="question-card__answer">
+            Captain America: Civil War
+            <a href="#hide" id="hide">Hide answer</a>
+          </div>
+        </button>
+        <ul class="question-card__tags">
+          <li>#Movies</li>
+          <li>#SuperHeroes</li>
+        </ul>
+      </article>
+      <article class="question-card question-5">
+        <button class="question-card__bookmark">
+          <img
+            src="./resources/bookmark_filled.png"
+            alt="Bookmark"
+            style="width: 2em; height: 2em"
+          />
+        </button>
+        <h4 class="question-card__question question-5">
+          What is the name of Thor's enchanted hammer?
+        </h4>
+        <button id="show">
+          <a href="#show" id="show">Show answer</a>
+          <div id="question-card__answer">
+            Mjolnir
+            <a href="#hide" id="hide">Hide answer</a>
+          </div>
+        </button>
+        <ul class="question-card__tags">
+          <li>#Objects</li>
+          <li>#Thor</li>
+        </ul>
+      </article>
+      <article class="question-card question-9">
+        <button class="question-card__bookmark">
+          <img
+            src="./resources/bookmark_filled.png"
+            alt="Bookmark"
+            style="width: 2em; height: 2em"
+          />
+        </button>
+        <h4 class="question-card__question question-9">
+          What is the name of the fictional African nation ruled by T'Challa,
+          also known as Black Panther?
+        </h4>
+        <button id="show">
+          <a href="#show" id="show">Show answer</a>
+          <div id="question-card__answer">
+            Wakanda
+            <a href="#hide" id="hide">Hide answer</a>
+          </div>
+        </button>
+        <ul class="question-card__tags">
+          <li>#BlackPanter</li>
+        </ul>
+      </article>
     </main>
     <footer class="main-footer">
       <nav class="navbar">

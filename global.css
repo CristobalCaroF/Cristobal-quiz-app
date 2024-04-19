@@ -1,0 +1,39 @@
+@import url(./components/header.css);
+@import url(./components/main.css);
+@import url(./components/navigation.css);
+
+:root {
+  /* color variables */
+
+  /* sizes variables */
+
+  --general-gap: 20px;
+
+  --header-title: 4rem;
+  --header-title-line-height: 5rem;
+
+  --regular-text: 1rem;
+  --regular-text-line-height: 1.5rem;
+
+  /* calculations */
+
+  --header-height: calc(
+    var(--header-title-line-height) + (2 * var(--general-gap))
+  );
+
+  --nav-height: calc(
+    var(--regular-text-line-height) + (2 * var(--general-gap))
+  );
+
+  --main-margin-top: calc(var(--header-height) + (0.5 * var(--nav-height)));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
