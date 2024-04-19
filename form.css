@@ -1,0 +1,39 @@
+@import url(./global.css);
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border-radius: 16px; */
+  padding: 20px;
+  height: auto;
+  width: auto;
+  font-size: 1.5rem;
+  background: #969696;
+  /* box-shadow: 0px 0px 10px #265073; */
+  margin-top: var(--main-margin-top);
+  margin-bottom: var(--nav-height);
+}
+
+textarea {
+  width: 300px;
+}
+
+label {
+  background: #265073;
+  color: #f8f4ec;
+  display: flex;
+  /* border-radius: 6px; */
+  margin: 0px auto 0px auto;
+  justify-content: flex-start;
+  margin-top: 1em;
+  text-align: right;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 1em;
+}

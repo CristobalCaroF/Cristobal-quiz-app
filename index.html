@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="card.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="main-header">
@@ -12,9 +13,14 @@
     </header>
     <main>
       <article class="question-card question-1">
-        <button class="question-card__bookmark">
+        <button
+          class="question-card__bookmark"
+          id="question-card__bookmark"
+          data-js="question-card__bookmark"
+        >
           <img
             src="./resources/bookmark.png"
+            id="Bookmark-1"
             alt="Bookmark"
             style="width: 2em; height: 2em"
           />
@@ -23,10 +29,13 @@
           What is the name of the first Marvel Cinematic Universe film, released
           in 2008?
         </h4>
-        <button id="question-card__answer-button">
+        <button
+          id="question-card__answer-button"
+          data-js="question-card__answer-button"
+        >
           <a id="question-card__answer-button">Show answer</a>
         </button>
-        <div id="question-card__answer">Iron Man</div>
+        <div id="question-card__answer-1">Iron Man</div>
         <ul class="question-card__tags">
           <li>#Movies</li>
         </ul>
@@ -65,8 +74,8 @@
         </h4>
         <button id="question-card__answer-button">
           <a id="question-card__answer-button">Show answer</a>
-          <div id="question-card__answer">Tony Stark</div>
         </button>
+        <div id="question-card__answer">Tony Stark</div>
         <ul class="question-card__tags">
           <li>#SuperHeroes</li>
           <li>#IronMan</li>
@@ -86,8 +95,8 @@
         </h4>
         <button id="question-card__answer-button">
           <a id="question-card__answer-button">Show answer</a>
-          <div id="question-card__answer">Captain America: Civil War</div>
         </button>
+        <div id="question-card__answer">Captain America: Civil War</div>
         <ul class="question-card__tags">
           <li>#Movies</li>
           <li>#SuperHeroes</li>
@@ -106,8 +115,8 @@
         </h4>
         <button id="question-card__answer-button">
           <a id="question-card__answer-button">Show answer</a>
-          <div id="question-card__answer">Mjolnir</div>
         </button>
+        <div id="question-card__answer">Mjolnir</div>
         <ul class="question-card__tags">
           <li>#Objects</li>
           <li>#Thor</li>
@@ -126,8 +135,8 @@
         </h4>
         <button id="question-card__answer-button">
           <a id="question-card__answer-button">Show answer</a>
-          <div id="question-card__answer">Chris Evans</div>
         </button>
+        <div id="question-card__answer">Chris Evans</div>
         <ul class="question-card__tags">
           <li>#SuperHeroes</li>
           <li>#Actors</li>
@@ -148,11 +157,11 @@
         </h4>
         <button id="question-card__answer-button">
           <a id="question-card__answer-button">Show answer</a>
-          <div id="question-card__answer">
-            S.H.I.E.L.D. (Strategic Homeland Intervention, Enforcement, and
-            Logistics Division)
-          </div>
         </button>
+        <div id="question-card__answer">
+          S.H.I.E.L.D. (Strategic Homeland Intervention, Enforcement, and
+          Logistics Division)
+        </div>
         <ul class="question-card__tags">
           <li>#Movies</li>
           <li>#Avengers</li>
@@ -171,13 +180,9 @@
           the MCU?
         </h4>
         <button id="question-card__answer-button">
-          <a
-            href="#question-card__answer-button question-8"
-            id="question-card__answer-button"
-            >Show answer</a
-          >
-          <div id="question-card__answer">Captain America: Civil War</div>
+          <a id="question-card__answer-button">Show answer</a>
         </button>
+        <div id="question-card__answer">Captain America: Civil War</div>
         <ul class="question-card__tags">
           <li>#SuperHeroes</li>
           <li>#SpiderMan</li>
@@ -197,13 +202,9 @@
           also known as Black Panther?
         </h4>
         <button id="question-card__answer-button">
-          <a
-            href="#question-card__answer-button question-9"
-            id="question-card__answer-button"
-            >Show answer</a
-          >
-          <div id="question-card__answer">Wakanda</div>
+          <a id="question-card__answer-button">Show answer</a>
         </button>
+        <div id="question-card__answer">Wakanda</div>
         <ul class="question-card__tags">
           <li>#BlackPanter</li>
         </ul>
@@ -222,13 +223,9 @@
           the universe?
         </h4>
         <button id="question-card__answer-button">
-          <a
-            href="#question-card__answer-button question-10"
-            id="question-card__answer-button"
-            >Show answer</a
-          >
-          <div id="question-card__answer">Avengers: Infinity War</div>
+          <a id="question-card__answer-button">Show answer</a>
         </button>
+        <div id="question-card__answer">Avengers: Infinity War</div>
         <ul class="question-card__tags">
           <li>#Movies</li>
           <li>#Thanos</li>
@@ -248,6 +245,12 @@
           ><img
             src="./resources/bookmark_transparent.png"
             alt="Bookmarks"
+            style="width: 3em; height: 3em"
+        /></a>
+        <a class="navbar-link" href="form.html"
+          ><img
+            src="./resources/add.png"
+            alt="Question-form"
             style="width: 3em; height: 3em"
         /></a>
         <a class="navbar-link" href="./profile.html"

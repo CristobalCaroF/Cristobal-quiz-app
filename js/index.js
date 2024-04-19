@@ -29,11 +29,9 @@ answerText.setAttribute("hidden", "");
 function showHideAnswer() {
   if (answerButton.textContent === "Show answer") {
     answerButton.textContent = "Hide answer";
-    console.log(answerButton.textContent);
     answerText.removeAttribute("hidden");
   } else {
     answerButton.textContent = "Show answer";
-    console.log(answerButton.textContent);
     answerText.setAttribute("hidden", "");
   }
 }
