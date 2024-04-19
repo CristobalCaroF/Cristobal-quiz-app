@@ -18,3 +18,24 @@ function bookmarkSelector() {
 }
 
 bookmarkButton.addEventListener("click", bookmarkSelector);
+
+// ----------------SHOW-HIDE BUTTON--------------------
+
+const answerButton = document.querySelector(
+  '[data-js="question-card__answer-button"]'
+);
+let answerText = document.getElementById("question-card__answer-1");
+answerText.setAttribute("hidden", "");
+function showHideAnswer() {
+  if (answerButton.textContent === "Show answer") {
+    answerButton.textContent = "Hide answer";
+    console.log(answerButton.textContent);
+    answerText.removeAttribute("hidden");
+  } else {
+    answerButton.textContent = "Show answer";
+    console.log(answerButton.textContent);
+    answerText.setAttribute("hidden", "");
+  }
+}
+
+answerButton.addEventListener("click", showHideAnswer);
