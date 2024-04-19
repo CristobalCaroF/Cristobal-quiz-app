@@ -32,10 +32,10 @@
   justify-content: space-around;
 }
 
-/* p {
-  display: flex;
-  justify-content: space-around;
-} */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .profile__content {
   margin-top: 1em;
