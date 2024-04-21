@@ -17,6 +17,7 @@
   margin-top: var(--nav-height);
   width: 45px;
   align-items: center;
+  z-index: 1;
 }
 
 .navbar-link:hover {

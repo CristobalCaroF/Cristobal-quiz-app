@@ -22,8 +22,25 @@
   margin-top: var(--main-margin-top);
 }
 
-/* Code from: https://stackoverflow.com/questions/40312901/showing-and-
-hiding-something-with-pure-css-with-show-and-hide-button */
+.question-card__bookmark {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.question-card__question {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+#question-card__answer-button:target #question-card__answer {
+  display: inline-block;
+}
 
 #question-card__answer {
   display: flex;
@@ -44,18 +61,6 @@ hiding-something-with-pure-css-with-show-and-hide-button */
   margin-top: 1em;
 }
 
-#question-card__answer-button:target #question-card__answer {
-  display: inline-block;
-}
-
-.question-card__question {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 1em;
-}
-
 ul {
   list-style-type: none;
 }
@@ -71,24 +76,6 @@ li {
   justify-content: center;
   align-self: center;
 }
-
-.question-card__bookmark {
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-/* #question-card__answer {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  padding: auto;
-  font-size: 18px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-} */
 
 .question-card__tags {
   display: flex;

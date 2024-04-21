@@ -5,29 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="form.css" />
+    <script src="./form.js" defer></script>
   </head>
   <body>
     <header class="main-header">
       <h1 class="app-title">Marvel Quiz!</h1>
     </header>
-    <main>
-      <form action="">
+    <main id="main">
+      <form data-js="form">
         <label for="your-question">Your question:</label>
         <textarea
+          placeholder="Write your question here"
+          data-js="your-question"
           name="your-question"
           id="form__user-question"
           cols="30"
           rows="10"
+          data-js="question"
+          maxlength="150"
         ></textarea>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters-question">150 </span> characters
+          left
+        </p>
         <label for="your-answer">Your answer:</label>
         <textarea
+          placeholder="Write your answer here"
+          data-js="your-answer"
           name="your-answer"
           id="form__user-answer"
           cols="30"
           rows="10"
+          data-js="answer"
         ></textarea>
+        <p class="remaining-characters">
+          <span data-js="remaining-characters-answer">150</span> characters left
+        </p>
         <label for="user-tag">Tag:</label>
-        <input type="text" id="form__tag" name="user-tag" />
+        <input type="text" id="form__tag" name="user-tag" data-js="tag" />
         <button type="submit">Submit</button>
       </form>
     </main>

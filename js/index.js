@@ -4,6 +4,8 @@ const bookMarkButton = document.querySelector(
   '[data-js="question-card__bookmark"]'
 );
 
+// ----------------BOOKMARK BUTTON--------------------
+
 // Reference code: https://stackoverflow.com/questions/52015073/how-to-toggle-between-two-images-with-a-button-using-javascript-code
 
 let bookMarkImage = document.getElementById("Bookmark-1");
