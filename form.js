@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) => {
   const form__bookmark = document.createElement("button");
   const form__bookmarkimg = document.createElement("img");
 
-  const form__question = document.createElement("div");
+  const form__question = document.createElement("h4");
   const form__showAnswer = document.createElement("button");
   const form__answer = document.createElement("div");
   const form__tags = document.createElement("ul");

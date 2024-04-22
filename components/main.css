@@ -18,4 +18,5 @@ main {
   align-items: center;
   gap: 50px;
   flex-direction: column;
+  min-height: max-content;
 }
